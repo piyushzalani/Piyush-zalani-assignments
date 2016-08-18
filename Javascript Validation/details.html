@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US" manifest="resume.appcache">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Online Responsive Resume</title>
+	<meta name="author" content="Piyush Zalani">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="details.css">
+	<link rel="icon" href="images/icon.gif" type="image/gif" sizes="16x16">
+	<script src="resume.js"></script>
+	<script src="jquery-3.1.0.js"></script>
+	<script src="jquery_demo.js"></script>
+	
+</head>
+
+<body>
+
+	<div id="w">
+	<header>
+		<nav>
+			<ul>
+				<li>
+					<a href="">Personal Details</a>
+				</li>
+			
+				<li>	
+					<a href="">Education</a>
+				</li>
+				<li>
+					<a href="">Experience</a>
+				</li>
+				<li>
+					<a href="">Objectives</a>
+				</li>
+				<li>
+					<a href="">Skills</a>
+				</li>
+				<li>
+					<a href="">Project</a>
+				</li>
+				<li>
+					<a href="" id="address"><p>Adderss</p></a>
+				</li>
+			
+		</nav>
+	</header>
+	<div class="Information">
+		<form action="details.html" method="get" name="details" onsubmit="return(validate());">
+		
+			<div class = "details">
+			
+
+				<table>
+					<div class="headings">
+					<hr/>
+					<h3><Mark>Personal Details:-</mark><h3>
+					<hr/>
+					</div>
+					<tr>
+						<td>First Name: </td> <td><input type="text" id="firstName"/></td>
+					</tr>
+					<tr>
+						<td>Last Name: </td> <td><input type="text" name="lastName" id="lastName"/></td>
+					</tr>
+					<tr>
+						<td>Email: </td> <td><input type="email" name="email" id="email"></td>
+					</tr>
+					<tr>
+						<td>Phone Number: </td> <td><input type="text" name="phoneNumber" id="phoneNumber"/></td>
+					</tr>
+					<tr>
+						<td>Linkdin URL: </td> <td><input type="url" name="Linkdin" id="Linkdin"/></td>
+					</tr>
+					<tr>
+						<td>DOB: </td> <td><input type="date" name="date" id="date"></td>
+					</tr>
+					<tr>
+						<td>Upload Pic: </td><td><input type="file" name="filename" accept="image/gif, image/jpeg, image/png"></td>
+					<tr>
+				</table>
+			</div>
+			<hr/>
+			<div class = "address">
+				<table>
+					<div class="headings">
+					<h3><Mark>Address:-</mark><h3>
+					</div>
+					<hr/>
+					<tr><td>Street: </td><td><input type="text" id="street"/></td></tr>
+					<tr><td>City: </td><td><input type="text" id="city"/></td></tr>
+					<tr><td>State: </td><td><input type="text" id="state"/></td></tr>
+					<tr><td>Country: </td><td><input type="text" id="country"/></td></tr>
+					<tr><td>Pin Code: </td><td><input type="text" id="pinCode"/></td></tr>
+				</table>
+			</div>
+			<div class="submit">			
+				<input type="submit" name="submit" id="submit" value="Submit"/>
+			</div>
+			
+		</form>
+	</div>
+	
+	<footer>
+	</footer>
+</body>
+</html>

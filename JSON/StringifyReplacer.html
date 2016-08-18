@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="id01"></div>
+<script>
+function replacer(key, value) {
+  if (typeof value === "string") {
+    return undefined;
+  }
+  return value;
+}
+
+var foo = {foundation: "Mozilla", model: "box", week: 45, transport: "car", month: 7};
+var jsonString = JSON.stringify(foo, replacer);
+var tab = JSON.stringify(jsonString, null, '\t');
+var obj = JSON.stringify(foo, ['week', 'month']);
+var obj1 = JSON.stringify(jsonString);
+// '{"week":45,"month":7}', only keep "week" and "month" properties
+console.log(obj);
+console.log(tab);
+console.log(obj1);
+document.getElementById(id01).innerHTML = JSON.parse(jsonString);
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+What is prototyping in JS?
+	http://yehudakatz.com/2011/08/12/understanding-prototypes-in-javascript/
+	
+Context, Instantiation, Closure and Scope?
+	http://ryanmorr.com/understanding-scope-and-context-in-javascript/
+	http://callmenick.com/post/instantiation-patterns-in-javascript
+	
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
+

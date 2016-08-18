@@ -1,0 +1,12 @@
+var obj = {num:20};
+
+var functionName = functionName(arg1, arg2, arg3) {
+
+};
+//call()
+fuctionName.call(obj, arg1, arg2, arg3);
+//apply()
+functionName.apply(obj [arg1, arg2, arg3]);
+//bind()
+var bound = functionName.bind(obj);
+bound(arg1, arg2, arg3);

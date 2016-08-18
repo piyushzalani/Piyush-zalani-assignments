@@ -1,0 +1,167 @@
+* { margin: 0; padding: 0; }
+
+body { 
+	background: #f2f2f2 url('images/bg-tile.png');
+	font-size: 62.5%;
+	padding-bottom: 65px;
+	display:flex;
+	justify-content:center;
+}
+
+h1 { 
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: #454545;
+	font-size: 3.6em;
+	margin-bottom: 6px;
+}
+
+h2 {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	 color: #484848;
+	 font-size: 2.5em;
+	 margin-bottom: 10px;
+	 text-decoration: underline;
+}
+
+h3 { 
+	font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+	color: #777;
+	font-weight: normal;
+	font-size: 1.8em;
+	margin-bottom: 10px;
+}
+
+h4 { 
+	font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+	color: #656565;
+	font-weight: bold;
+	font-size: 1.75em;
+	margin-bottom: 4px;
+}
+
+p , details{ 
+	font-family: "Balthazar", "Droid Serif", serif;
+	color: #565656;
+	font-size: 1.8em;
+	line-height: 1.4em;
+	margin-bottom: 15px;
+	padding-left: 35px;
+}
+
+summary::-webkit-details-marker {
+  display: none
+}
+summary:after {
+  background: Black; 
+  border-radius: 50%; 
+  content: "+"; 
+  color: red; 
+  float: left; 
+  font-size: 1.5em; 
+  font-weight: bold; 
+  margin: -5px 10px 0 0; 
+  padding: 0; 
+  text-align: center; 
+  width: 20px;
+}
+details[open] summary:after {
+  content: "-";
+}
+
+small {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: #656565;
+	font-size: 1.6em;
+	display: block;
+	margin-bottom: 6px;
+}
+
+ul { 
+	display: block;
+	list-style: none;
+}
+
+ul li { 
+	padding-left: 45px;
+	list-style-type: none;
+	vertical-align: top;
+	background: url('images/bullet.png') 25px 5px no-repeat;
+	margin-bottom: 5px;
+	font-family: "Balthazar", "Droid Serif", serif;
+	color: #666;
+	font-size: 1.6em;
+	line-height: 2.3em;
+}
+
+img { 
+	border: 0;
+	max-width: 100%;
+}
+
+a {
+	color: #5582d6;
+	text-decoration: none;
+}
+
+a:hover { 
+	text-decoration: underline;
+}
+
+#w {
+	margin: 0px 50px;
+	padding: 20px 40px;
+	padding-top: 35px;
+	background: rgba(255,255,255,0.6);
+	min-width: 260px;
+	max-width: 1200px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+header { 
+	width: 100%;
+	display:block;
+}
+
+#info { 
+	float: left;
+	margin-bottom: 12px;
+}
+
+#photo { 
+	float: right;
+}
+
+#photo img { 
+	border-radius: 3px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 5px; 
+	
+}
+
+
+#skills-left { 
+	display: block;
+	float: left; : 
+	margin-right: 30px;
+}
+
+#skills-right { 
+	display: block;
+	float: left;
+}
+
+.clearfix { 
+	display: inline-block;
+}
+
+footer {
+	width: 100%;
+}
+
+
+
+
+

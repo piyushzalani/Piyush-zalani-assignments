@@ -1,0 +1,74 @@
+.outer {
+  border: 1px solid #000000;
+  width: 600px;
+  height: 600px;
+  position: relative; }
+
+.rectangle, .rectangle1, .rectangle1, .rectangle2, .rectangle3 {
+  border: 1px solid #000000;
+  margin: 5px;
+  height: 200px;
+  width: 200px; }
+
+.square, .square1, .square2, .square3, .square0 {
+  border: 1px solid #000000;
+  margin: 5px;
+  height: 40px;
+  width: 40px; }
+
+.ovel, .ovel1, .ovel2, .ovel3 {
+  border: 1px solid #000000;
+  margin: 5px;
+  height: 40px;
+  width: 60px; }
+
+.rect, .rect1, .rect2, .rect3 {
+  border: 1px solid #000000;
+  margin: 5px;
+  height: 40px;
+  width: 60px;
+  border-radius: 30%; }
+
+.circle, .circle1, .circle2, .circle3, .circle0 {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 50%;
+  border: 1px solid #000000; }
+
+.circle4 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.square0, .circle0 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.circle, .rect, .ovel, .square {
+  float: left;
+  position: relative; }
+
+.rectangle1, .circle1, .rect1, .ovel1, .square1 {
+  float: right;
+  position: relative; }
+
+.rectangle2, .square2, .circle2, .rect2, .ovel2 {
+  position: absolute;
+  bottom: 0;
+  float: right; }
+
+.rectangle3, .square3, .circle3, .rect3, .ovel3 {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  float: right; }
+
+/*# sourceMappingURL=style.scss.map */

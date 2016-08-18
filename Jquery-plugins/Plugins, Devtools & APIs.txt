@@ -1,0 +1,69 @@
+Advantage of client side validation over server side validations
+	As others have said, you should do both. Here's why:
+
+	Client Side :
+
+		You want to validate input on the client side first because you can give better feedback to the average user. For example, if they enter an invalid email address and move to the next field, you can show an error message immediately. That way the user can correct every field before they submit the form.
+
+		If you only validate on the server, they have to submit the form, get an error message, and try to hunt down the problem.
+
+		(This pain can be eased by having the server re-render the form with the user's original input filled in, but client-side validation is still faster.)
+
+	Server Side : 
+	 
+		You want to validate on the server side because you can protect against the malicious user, who can easily bypass your JavaScript and submit dangerous input to the server.
+
+		It is very dangerous to trust your UI. Not only can they abuse your UI, but they may not be using your UI at all, or even a browser. What if the user manually edits the URL, or runs their own Javascript, or tweaks their HTTP requests with another tool? What if they send custom HTTP requests from curl or from a script, for example?
+
+		(This is not theoretical; eg, I worked on a travel search engine that re-submits the user's search to many airlines, bus companies, etc, by sending POST requests as if the user had filled each company's search form, then gathers and sorts all the results. Those companies' form JS is never executed.)
+
+		Not allowing for that is not only naive from a security standpoint, but also non-standard: a client should be allowed to send HTTP by whatever means they wish, and you should respond correctly. That includes validation.
+
+		Server side validation is also important for compatibility - not all users will have JavaScript enabled.
+
+		
+Validation types available in JQuery Validation Plugin
+	https://jqueryvalidation.org/documentation/
+	
+
+write our own custom JQuery Validation Plugin
+	https://jqueryvalidation.org/jQuery.validator.addMethod/
+	
+	
+Agile methodology, what is Story, Scrum and Sprint
+	
+	STORY : 
+		A user story is a tool used in Agile software development to capture a description of a software feature from an end-user perspective. The user story describes the type of user, what they want and why. A user story helps to create a simplified description of a requirement.
+		A user story template often uses the following type of format:
+
+		As a <role>, I want <feature> so that <reason>.
+
+		Examples of user stories are:
+
+		As a user, I want to upload photos so that I can share photos with others.
+
+		As an administrator, I want to approve photos before they are posted so that I can make sure they are appropriate.
+	
+	
+	SCRUM : 
+		Scrum is a subset of Agile. It is a lightweight process framework for agile development, and the most widely-used one.
+		A “process framework” is a particular set of practices that must be followed in order for a process to be consistent with the framework. (For example, the Scrum process framework requires the use of development cycles called Sprints, the XP framework requires pair programming, and so forth.)
+		“Lightweight” means that the overhead of the process is kept as small as possible, to maximize the amount of productive time available for getting useful work done.
+		A Scrum process is distinguished from other agile processes by specific concepts and practices, divided into the three categories of Roles, Artifacts, and Time Boxes. These and other terms used in Scrum are defined below. Scrum is most often used to manage complex software and product development, using iterative and incremental practices. Scrum significantly increases productivity and reduces time to benefits relative to classic “waterfall” processes. Scrum processes enable organizations to adjust smoothly to rapidly-changing requirements, and produce a product that meets evolving business goals. An agile Scrum process benefits the organization by helping it to
+		Increase the quality of the deliverables
+		Cope better with change (and expect the changes)
+		Provide better estimates while spending less time creating them
+		Be more in control of the project schedule and state
+		
+	
+	SPRINT :
+		In product development, a sprint is a set period of time during which specific work has to be completed and made ready for review.
+
+		Each sprint begins with a planning meeting. During the meeting, the product owner (the person requesting the work) and the development team agree upon exactly what work will be accomplished during the sprint. The development team has the final say when it comes to determining how much work can realistically be accomplished during the sprint, and the product owner has the final say on what criteria need to be met for the work to be approved and accepted.
+			
+		The duration of a sprint is determined by the scrum master, the team's facilitator. Once the team reaches a consensus for how many days a sprint should last, all future sprints should be the same. Traditionally, a sprint lasts 30 days.
+
+		After a sprint begins, the product owner must step back and let the team do their work. During the sprint, the team holds daily stand up meeting to discuss progress and brainstorm solutions to challenges. The project owner may attend these meetings as an observer but is not allowed to participate unless it is to answer questions. (See pigs and chickens). The project owner may not make requests for changes during a sprint and only the scrum master or project manager has the power to interrupt or stop the sprint.
+
+		At the end of the sprint, the team presents its completed work to the project owner and the project owner uses the criteria established at the sprint planning meeting to either accept or reject the work.
+		
